@@ -1,1 +1,14 @@
-{"image":"mcr.microsoft.com/devcontainers/universal:2"}
+{
+  "name": "Code-XR Demo",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "aMonteSl.code-xr"
+      ],
+      "settings": {
+        "workbench.startupEditor": "none"
+      }
+    }
+  }
+}
