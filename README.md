@@ -1,6 +1,7 @@
 # Code-XR Interactive Demo
 
 Welcome! This Codespace is configured to demo the **Code-XR** extension in action.
+[Repository Sample Code-XR](https://github.com/aMonteSl/code-xr-demo.git)
 
 ## 🚀 How to Use
 
@@ -14,4 +15,4 @@ No setup required — everything is ready.
 
 ---
 
-[Learn more about Code-XR →](https://YOUR_DOMAIN_OR_MARKETPLACE_LINK)
+[Learn more about Code-XR →](https://github.com/aMonteSl/code-xr-demo.git)
