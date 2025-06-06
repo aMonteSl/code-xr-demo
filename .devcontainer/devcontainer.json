@@ -6,60 +6,27 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "aMonteSl.code-xr",
-        "ms-vscode.vscode-typescript-next",
-        "ms-python.python",
-        "ms-vscode.cpptools",
-        "redhat.java"
+        "aMonteSl.code-xr"
       ],
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash",
         "workbench.colorTheme": "Default Dark+",
-        "editor.fontSize": 14,
-        "editor.tabSize": 2,
-        "files.autoSave": "afterDelay",
-        "explorer.confirmDelete": false,
-        "git.enableSmartCommit": true,
-        "workbench.startupEditor": "readme"
+        "editor.fontSize": 16
       }
     }
   },
 
   // Características adicionales para un mejor entorno de desarrollo
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
-    },
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.11"
     },
-    "ghcr.io/devcontainers/features/git:1": {}
-  },
-
-  // Configuración de puertos para desarrollo web
-  "forwardPorts": [3000, 8080, 5000],
-  "portsAttributes": {
-    "3000": {
-      "label": "Frontend Dev Server"
-    },
-    "8080": {
-      "label": "Backend Server"
-    },
-    "5000": {
-      "label": "Python Server"
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
     }
   },
 
-  // Comandos post-creación para preparar el entorno
-  "postCreateCommand": "bash .devcontainer/setup.sh",
-  
   // Comando de inicio para mostrar información útil
-  "postStartCommand": "echo '🚀 Code-XR Demo Environment Ready! Check README.md for usage instructions.'",
-
-  // Mejoras de rendimiento
-  "mounts": [
-    "source=${localWorkspaceFolder}/.vscode,target=/workspaceFolder/.vscode,type=bind,consistency=cached"
-  ],
+  "postStartCommand": "echo '🎉 Code-XR Demo Ready! Open any file in the demo/ folder and right-click to try Code-XR visualization!'",
 
   // Configuración del usuario
   "remoteUser": "vscode"
